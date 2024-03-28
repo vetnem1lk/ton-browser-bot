@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поиск сайтов</title>
+    <title>Search App</title>
     <link rel="stylesheet" href="frontend/styles.css">
 </head>
 <body>
-<div class="container">
-    <h1>Поиск сайтов</h1>
-    <form id="searchForm">
-        <label for="query">Запрос:</label>
-        <input type="text" id="query" name="query" required>
-        <label for="searchEngine">Поисковая система:</label>
-        <select id="searchEngine" name="searchEngine">
-            <option value="google">Google</option>
-            <option value="yandex">Yandex</option>
-            <option value="bing">Bing</option>
-            <!-- Добавьте другие поисковые системы по желанию -->
-        </select>
-        <button type="submit">Найти</button>
-    </form>
-    <div id="searchResults">
-        <!-- Результаты поиска будут отображены здесь -->
+<div class="top-bar">
+    <!-- Кнопка настроек -->
+    <button id="settingsButton">Настройки</button>
+    <!-- Панель закладок -->
+    <div class="bookmarks">
+        <!-- Здесь будут ваши закладки -->
     </div>
+</div>
+
+<div class="search-results" id="searchResults">
+    <!-- Здесь будут отображаться результаты поиска -->
+</div>
+
+<div class="search-panel">
+    <!-- Панель поиска -->
+    <label for="query"></label><input type="text" id="query" placeholder="Введите запрос">
+    <!-- Кнопка поиска -->
+    <button type="submit" id="searchButton"><img src="backend/src/search-icon.svg" alt="Search"></button>
 </div>
 
 <script src="frontend/main.ts"></script>

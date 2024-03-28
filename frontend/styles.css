@@ -1,112 +1,72 @@
-/* Обнуляем отступы и поля */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Устанавливаем шрифт */
-body {
     font-family: Arial, sans-serif;
-    background-color: #20272e; /* Цвет фона, темно-синий */
-    color: #fff; /* Цвет текста, белый */
+    background-color: #2C2F33;
+    color: #FFFFFF;
 }
 
-/* Стили для контейнера */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Заголовок */
-h1 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Форма поиска */
-form {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #cfd7df; /* Цвет текста для меток, серый */
-}
-
-input[type="text"],
-select {
-    width: 100%;
+.top-bar {
+    background-color: #36393E;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #39444d; /* Цвет рамки, темно-серый */
-    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookmarks {
+    display: flex;
+}
+
+.search-results {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #36393E;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #36393E;
+    border-radius: 5px 0 0 5px;
     font-size: 16px;
-    background-color: #2b333b; /* Цвет фона, темно-серый */
-    color: #fff; /* Цвет текста, белый */
+    outline: none;
+    background-color: #36393E;
+    color: #FFFFFF;
 }
 
 input[type="text"]::placeholder {
-    color: #cfd7df; /* Цвет placeholder'а, серый */
-}
-
-select {
-    background-color: #2b333b; /* Цвет фона, темно-серый */
-    color: #fff; /* Цвет текста, белый */
+    color: #B4B4B4;
 }
 
 button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #007aff; /* Цвет кнопки, синий */
-    color: #fff;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    padding: 10px;
+    color: #0088CC;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3; /* Цвет кнопки при наведении, темно-синий */
+    background-color: #0088CC;
+    color: #FFFFFF;
 }
 
-/* Результаты поиска */
-.search-result {
-    display: flex;
-    margin-bottom: 20px;
-    border: 1px solid #39444d; /* Цвет рамки, темно-серый */
-    border-radius: 5px;
-    overflow: hidden;
-    transition: box-shadow 0.3s;
-}
-
-.search-result:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.result-icon {
-    flex: 0 0 100px;
-    padding: 10px;
-    background-color: #2b333b; /* Цвет фона, темно-серый */
-}
-
-.result-icon img {
-    max-width: 100%;
-    height: auto;
-}
-
-.result-info {
-    flex: 1;
-    padding: 10px;
-}
-
-.result-title {
-    margin-bottom: 5px;
-}
-
-.result-description {
-    color: #8899a6; /* Цвет текста описания, серый */
+button[type="submit"] img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
