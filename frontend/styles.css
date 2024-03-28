@@ -1,0 +1,112 @@
+/* Обнуляем отступы и поля */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Устанавливаем шрифт */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #20272e; /* Цвет фона, темно-синий */
+    color: #fff; /* Цвет текста, белый */
+}
+
+/* Стили для контейнера */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Заголовок */
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Форма поиска */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cfd7df; /* Цвет текста для меток, серый */
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #39444d; /* Цвет рамки, темно-серый */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2b333b; /* Цвет фона, темно-серый */
+    color: #fff; /* Цвет текста, белый */
+}
+
+input[type="text"]::placeholder {
+    color: #cfd7df; /* Цвет placeholder'а, серый */
+}
+
+select {
+    background-color: #2b333b; /* Цвет фона, темно-серый */
+    color: #fff; /* Цвет текста, белый */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007aff; /* Цвет кнопки, синий */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении, темно-синий */
+}
+
+/* Результаты поиска */
+.search-result {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #39444d; /* Цвет рамки, темно-серый */
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.search-result:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-icon {
+    flex: 0 0 100px;
+    padding: 10px;
+    background-color: #2b333b; /* Цвет фона, темно-серый */
+}
+
+.result-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.result-info {
+    flex: 1;
+    padding: 10px;
+}
+
+.result-title {
+    margin-bottom: 5px;
+}
+
+.result-description {
+    color: #8899a6; /* Цвет текста описания, серый */
+}
