@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search App</title>
+    <title>Card Swiping System</title>
     <link rel="stylesheet" href="frontend/styles.css">
 </head>
 <body>
-<div class="top-bar">
-    <!-- Кнопка настроек -->
-    <button id="settingsButton">Настройки</button>
-    <!-- Панель закладок -->
-    <div class="bookmarks">
-        <!-- Здесь будут ваши закладки -->
+<div class="card-container">
+    <div class="card">
+        <label for="search">Search</label>
+        <input id="search" type="search" pattern=".*\S.*" required>
+        <span class="caret"></span>
     </div>
-</div>
 
-<div class="search-results" id="searchResults">
-    <!-- Здесь будут отображаться результаты поиска -->
+    <!-- Add more cards here if needed -->
 </div>
-
-<div class="search-panel">
-    <!-- Панель поиска -->
-    <label for="query"></label><input type="text" id="query" placeholder="Введите запрос">
-    <!-- Кнопка поиска -->
-    <button type="submit" id="searchButton"><img src="backend/src/search-icon.svg" alt="Search"></button>
+<div class="form">
+    <div class="development-text">⚙️ Almost everything is ready, wait for the white book</div>
+    <div class="development-text">💖 Stay with us </div>
 </div>
-
-<script src="frontend/main.ts"></script>
+<script src="frontend/main.js"></script>
 </body>
 </html>
