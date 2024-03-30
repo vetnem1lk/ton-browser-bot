@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "@tonconnect/sdk": "^3.0.0"
-  }
+  },
+  "name": "TonBrowser",
+  "version": "1.0.0",
+  "description": "Browser based on the TON ecosystem, connecting global networks",
+  "main": "main.ts",
+  "repository": "https://github.com/vetnem1lk/ton-browser-bot.git",
+  "author": "vetnem1lk <vetnem1lk@mail.ru>",
+  "license": "MIT"
 }

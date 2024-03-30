@@ -1,15 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es2020",
+    "target": "ES5",
     "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
     "strict": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true
+    "esModuleInterop": true
   },
-  "ts-node": {
-    "transpileOnly": true,
-    "transpiler": "ts-node/transpilers/swc"
-  }
+  "include": ["frontend/*.ts"],
+  "exclude": ["node_modules"]
 }
